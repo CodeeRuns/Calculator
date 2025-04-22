@@ -1,4 +1,4 @@
-body {
+body{
     height: 100vh;
     display: flex;
     align-items: center;
@@ -6,12 +6,12 @@ body {
     justify-content: center;
 }
 
-.calculator {
+.calculator{
     box-sizing: border-box;
     height: 438px;
     width: 339px;
     padding: 10px;
-    background-color: #2f3c4f;
+    background-color: #355C7D;
     border: 2px solid black;
     border-radius: 4px;
     display: flex;
@@ -19,9 +19,9 @@ body {
     flex-wrap: wrap;
 }
 
-.display {
+.display{
     width: auto;
-    height 80px;
+    height: 80px;
     padding-right: 10px;
     background-color: #e0e0e0;
     border: 2px solid black;
@@ -32,7 +32,7 @@ body {
     align-items: end;
 }
 
-.buttons {
+.buttonContainer{
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -41,29 +41,50 @@ body {
     gap: 5px;
 }
 
-.btn {
+.btn{
     box-sizing: border-box;
     height: 60px;
     width: 75px;
-    background-color: #fdbd5d;
+    background-color: #C06C84;
     border: 2px solid black;
     border-radius: 10px;
     font-size: 26px;
     text-align: center;
 }
 
-.calculate {
-    
-    height: 60px;
-    width: 310px;
-    box-sizing: border-box;
-    background-color: #fdbd5d;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-size: 26px;
-    text-align: center;
+.operand,
+.decimal{
+    background-color: #F67280
 }
 
-.operator {
-    background-color: purple;
+#zero{
+    flex-basis: 155px;
+}
+
+.clear{
+    background-color: #F8B195;
+}
+
+.delete{
+    background-color: #F8B195;
+}
+
+.percent{
+    background-color: #F8B195;
+}
+
+.operand:active,
+.decimal:active{
+    background-color: #9dc6d8;
+}
+
+.operator:active,
+.equal:active{
+    background-color: #00b3ca;
+}
+
+.clear:active,
+.delete:active,
+.percent:active{
+    background-color: #7dd0b6;
 }
